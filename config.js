@@ -18,7 +18,7 @@ window.WEDDING_CONFIG = {
   // Пока используется заглушка. После загрузки фотографии:
   // 1. положите файл в assets, например assets/photo.jpg;
   // 2. замените значение ниже на "assets/photo.jpg".
-  heroImage: "assets/hero-placeholder.svg",
+  heroImage: "IMG_20220122_233251.jpg",
 
   alcoholOptions: [
     "Пиво",
