@@ -31,5 +31,5 @@ window.WEDDING_CONFIG = {
 
   // После настройки Google Apps Script вставьте сюда URL веб-приложения.
   // Пока поле пустое, форма работает в демо-режиме и сохраняет ответы только в браузере.
-  googleScriptUrl: ""
+  googleScriptUrl: "https://script.google.com/macros/s/AKfycbw719k7_jHm3OQyx3HpyFfCnswhrhYdMJsTErggYJVpue51K-AIIVrtNQpKMPhlW4i40Q/exec"
 };
