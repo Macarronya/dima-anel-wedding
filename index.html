@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3eee6" />
+  <meta name="description" content="Свадебная вечеринка Димы и Анель — 5 сентября 2026 года" />
+  <title>Дима & Анель — 05.09.2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="hero" id="top">
+    <img class="hero__image" id="heroImage" src="assets/hero-placeholder.svg" alt="Дима и Анель" />
+    <div class="hero__shade"></div>
+
+    <div class="hero__content">
+      <p class="eyebrow">Wedding party</p>
+      <h1><span id="partnerOne">Дима</span> <span class="amp">&</span> <span id="partnerTwo">Анель</span></h1>
+      <p class="hero__date" id="heroDate">05 · 09 · 2026</p>
+      <a class="scroll-link" href="#invitation">Открыть приглашение <span>↓</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro" id="invitation">
+      <p class="section-label">Приглашение</p>
+      <h2 id="introTitle">Мы женимся — и собираем своих на большую вечеринку</h2>
+      <p id="introText">
+        Без длинных церемоний и лишней официальности. Только любимые люди,
+        музыка, еда, напитки и танцы до позднего вечера.
+      </p>
+    </section>
+
+    <section class="details">
+      <article class="detail-card">
+        <span class="detail-card__number">01</span>
+        <p class="detail-card__label">Когда</p>
+        <h3 id="eventDateLong">5 сентября 2026</h3>
+        <p id="eventTime">Сбор гостей в 14:00</p>
+      </article>
+
+      <article class="detail-card detail-card--accent">
+        <span class="detail-card__number">02</span>
+        <p class="detail-card__label">Где</p>
+        <h3 id="eventPlace">с. Никольское</h3>
+        <p id="eventAddress">улица Заречная, 98</p>
+        <a id="mapLink" class="text-link" href="#" target="_blank" rel="noreferrer">Открыть маршрут ↗</a>
+      </article>
+    </section>
+
+    <section class="section countdown-section">
+      <p class="section-label">До встречи осталось</p>
+      <div class="countdown" aria-label="Обратный отсчёт до свадьбы">
+        <div><strong id="days">00</strong><span>дней</span></div>
+        <div><strong id="hours">00</strong><span>часов</span></div>
+        <div><strong id="minutes">00</strong><span>минут</span></div>
+        <div><strong id="seconds">00</strong><span>секунд</span></div>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="rsvp-heading">
+        <p class="section-label">RSVP</p>
+        <h2>Дайте нам знать, будете ли вы с нами</h2>
+        <p>Ответьте, пожалуйста, за себя или за вашу пару. Это поможет нам всё правильно рассчитать.</p>
+      </div>
+
+      <form class="rsvp-form" id="rsvpForm">
+        <label class="field">
+          <span>Ваше имя и фамилия</span>
+          <input name="guestName" type="text" autocomplete="name" placeholder="Например, Мария Иванова" required />
+        </label>
+
+        <fieldset class="field-group">
+          <legend>Вы будете на мероприятии?</legend>
+          <label class="choice">
+            <input type="radio" name="attendance" value="Да, буду" required />
+            <span>Да, буду</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="attendance" value="К сожалению, не смогу" required />
+            <span>К сожалению, не смогу</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="field-group" id="alcoholGroup">
+          <legend>Что вы будете пить?</legend>
+          <p class="field-hint">Можно выбрать несколько вариантов.</p>
+          <div class="choice-grid" id="alcoholOptions"></div>
+        </fieldset>
+
+        <label class="field">
+          <span>Комментарий</span>
+          <textarea name="comment" rows="3" placeholder="Например, ответ за двоих или пожелание по напиткам"></textarea>
+        </label>
+
+        <label class="consent">
+          <input type="checkbox" required />
+          <span>Подтверждаю отправку ответа организаторам мероприятия</span>
+        </label>
+
+        <button class="submit-button" type="submit">
+          <span class="button-label">Отправить ответ</span>
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="closing">
+      <p>Ждём вас</p>
+      <h2>5 сентября</h2>
+      <p class="closing__names"><span id="footerPartnerOne">Дима</span> & <span id="footerPartnerTwo">Анель</span></p>
+      <a href="#top" class="text-link">Наверх ↑</a>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
