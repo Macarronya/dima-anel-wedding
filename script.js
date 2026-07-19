@@ -42,11 +42,23 @@
       input.name = "alcohol";
       input.value = option;
 
-      const text = document.createElement("span");
-      text.textContent = option;
+     const content = document.createElement("span");
+content.className = "choice__content";
 
-      label.append(input, text);
-      container.append(label);
+const title = document.createElement("span");
+title.textContent = option;
+
+content.append(title);
+
+if (option === "Не буду пить - у меня депрессия") {
+  const note = document.createElement("small");
+  note.className = "choice__note";
+  note.textContent = "Для вас мы возьмём безалкогольное пиво";
+  content.append(note);
+}
+
+label.append(input, content);
+container.append(label);
     });
   };
 
