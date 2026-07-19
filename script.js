@@ -53,7 +53,7 @@ content.append(title);
 if (option === "Не буду пить - у меня депрессия") {
   const note = document.createElement("small");
   note.className = "choice__note";
-  note.textContent = "Для вас мы возьмём безалкогольное пиво";
+  note.textContent = "Для вас мы подготовим безалкогольное пиво, лимонады и крепкие объятия";
   content.append(note);
 }
 
