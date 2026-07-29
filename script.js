@@ -79,17 +79,26 @@ container.append(label);
   };
 
   const toggleAlcohol = () => {
-    const selected = document.querySelector('input[name="attendance"]:checked');
-    const group = document.getElementById("alcoholGroup");
+  const selected = document.querySelector('input[name="attendance"]:checked');
+  const alcoholGroup = document.getElementById("alcoholGroup");
+  const overnightGroup = document.getElementById("overnightGroup");
+
+  const unavailable = selected?.value === "К сожалению, не смогу";
+
+  [alcoholGroup, overnightGroup].forEach((group) => {
     if (!group) return;
 
-    const unavailable = selected?.value === "К сожалению, не смогу";
     group.hidden = unavailable;
 
     group.querySelectorAll("input").forEach((input) => {
       input.disabled = unavailable;
-      if (unavailable) input.checked = false;
+
+      if (unavailable) {
+        input.checked = false;
+      }
     });
+  });
+};
   };
 
   const collectPayload = (form) => {
@@ -98,6 +107,7 @@ container.append(label);
       submittedAt: new Date().toISOString(),
       guestName: String(data.get("guestName") || "").trim(),
       attendance: String(data.get("attendance") || ""),
+      overnight: String(data.get("overnight") || ""),
       alcohol: data.getAll("alcohol"),
       comment: String(data.get("comment") || "").trim(),
       userAgent: navigator.userAgent
