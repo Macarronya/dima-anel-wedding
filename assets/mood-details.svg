@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#261d20"/>
+  <circle cx="400" cy="410" r="270" fill="#8f1f2f"/>
+  <circle cx="400" cy="410" r="185" fill="#261d20"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M165 165 C280 310 270 550 125 690" stroke="#f1c64c" stroke-width="38"/>
+    <path d="M635 160 C520 330 545 590 690 735" stroke="#2f8a84" stroke-width="34"/>
+    <path d="M195 790 Q400 610 610 800" stroke="#e6d8c7" stroke-width="24"/>
+  </g>
+  <g fill="#e7c7ca">
+    <circle cx="400" cy="210" r="34"/><circle cx="400" cy="610" r="34"/><circle cx="200" cy="410" r="34"/><circle cx="600" cy="410" r="34"/>
+  </g>
+  <text x="56" y="930" fill="#fff8ee" font-family="Arial, sans-serif" font-size="28" letter-spacing="7">ДЕТАЛИ · АКЦЕНТЫ</text>
+</svg>
