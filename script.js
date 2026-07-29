@@ -98,7 +98,6 @@ container.append(label);
       }
     });
   });
-};
   };
 
   const collectPayload = (form) => {
