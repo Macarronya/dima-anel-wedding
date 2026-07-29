@@ -28,16 +28,17 @@ function setupHeaders() {
   const sheet = getSheet_();
 
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow([
-      "Дата ответа",
-      "Имя гостя",
-      "Присутствие",
-      "Алкоголь",
-      "Комментарий",
-      "Технические данные"
-    ]);
+   sheet.appendRow([
+  "Дата ответа",
+  "Имя гостя",
+  "Присутствие",
+  "Ночёвка",
+  "Алкоголь",
+  "Комментарий",
+  "Технические данные"
+]);
 
-    sheet.getRange(1, 1, 1, 6).setFontWeight("bold");
+    sheet.getRange(1, 1, 1, 7).setFontWeight("bold");
     sheet.setFrozenRows(1);
   }
 }
@@ -53,13 +54,14 @@ function doPost(e) {
     const sheet = getSheet_();
 
     sheet.appendRow([
-      payload.submittedAt || new Date().toISOString(),
-      payload.guestName || "",
-      payload.attendance || "",
-      Array.isArray(payload.alcohol) ? payload.alcohol.join(", ") : "",
-      payload.comment || "",
-      payload.userAgent || ""
-    ]);
+  payload.submittedAt || new Date().toISOString(),
+  payload.guestName || "",
+  payload.attendance || "",
+  payload.overnight || "",
+  Array.isArray(payload.alcohol) ? payload.alcohol.join(", ") : "",
+  payload.comment || "",
+  payload.userAgent || ""
+]);
 
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true }))
