@@ -613,3 +613,22 @@ textarea { resize: vertical; min-height: 90px; }
   .choice-grid { grid-template-columns: 1fr; }
   .rsvp-section { padding-top: 64px; padding-bottom: 64px; border-radius: 24px; }
 }
+.practical-section .adult-note {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 20px 26px;
+
+  color: #fffaf0;
+  background: var(--terracotta);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(73, 45, 25, 0.14);
+
+  text-align: center;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.practical-section .adult-note strong {
+  color: #ffd981;
+}
