@@ -53,11 +53,11 @@
     <section class="section theme-section" id="theme">
       <div class="theme-heading">
         <p class="section-label">Про формат</p>
-        <h2>Мексиканские и хиппи-мотивы — без обязательных костюмов</h2>
+        <h2>Мексиканские и хиппи-мотивы</h2>
         <p>
-          Это не маскарад и не строгий дресс-код. Приходи так, как тебе удобно,
+          Это не строгий дресс-код. Приходи так, как тебе удобно,
           а если хочется поддержать настроение — добавь яркий цвет, принт, деним,
-          бахрому, свободную рубашку, цветы или заметные аксессуары.
+          бахрому, свободную рубашку, пончо, цветы, да хоть шляпу сомбреро :) Просто будь ярким и красивым ❤️
         </p>
       </div>
 
@@ -66,7 +66,7 @@
           <img src="assets/mood-color.png" alt="Яркие цвета и принты" />
           <figcaption>
             <strong>Цвет и принты</strong>
-            <span>Терракота, красный, бирюза, жёлтый, цветочные и этнические мотивы.</span>
+            <span>Терракота, красный, бирюза, жёлтый, цветочные и этнические мотивы - абсолютное разноцветье.</span>
           </figcaption>
         </figure>
 
@@ -87,18 +87,19 @@
         </figure>
       </div>
 
-      <p class="mood-note">Это ориентиры для настроения, а не обязательный дресс-код.</p>
+      <p class="mood-note">Это ориентиры для настроения. Если образ совсем не складывается - надевай то, что давно хотелось выгулять, но всё было некуда. Здесь как раз будет куда. Вдруг тебе очень нужно снова надеть выпускное платье или сандалии римского легионера. </p>
     </section>
 
     <section class="practical-section">
       <article class="practical-card">
         <p class="practical-card__label">На территории</p>
-        <h2>Не только стол и танцы</h2>
-        <p>На базе можно будет переключаться между вечеринкой, отдыхом у воды и активностями.</p>
+        <h2>Развлечения</h2>
+        <p>Что есть:.</p>
         <ul class="info-list">
           <li>бассейн и водоём;</li>
           <li>площадки для волейбола, баскетбола и футбола;</li>
           <li>настольный теннис;</li>
+          <li>чан;</li>
           <li>баня.</li>
         </ul>
       </article>
@@ -112,6 +113,7 @@
           <li>спортивную или другую удобную обувь;</li>
           <li>одежду для активностей;</li>
           <li>сменную одежду;</li>
+          <li>если есть - бери теннисные ракетки, мячи;</li>
           <li>что-нибудь тёплое на вечер.</li>
         </ul>
       </article>
@@ -130,18 +132,17 @@
     <section class="section rsvp-section" id="rsvp">
       <div class="rsvp-heading">
         <p class="section-label">RSVP</p>
-        <h2>Дайте нам знать, будете ли вы с нами</h2>
-        <p>Ответьте, пожалуйста, за себя или за вашу пару. Это поможет нам всё правильно рассчитать.</p>
+        <h2>Дайте нам знать, будешь ли ты присутствовать</h2>
       </div>
 
       <form class="rsvp-form" id="rsvpForm">
         <label class="field">
-          <span>Ваше имя и фамилия</span>
+          <span>Твое имя и фамилия</span>
           <input name="guestName" type="text" autocomplete="name" placeholder="Например, Мария Иванова" required />
         </label>
 
         <fieldset class="field-group">
-          <legend>Вы будете на мероприятии?</legend>
+          <legend>Ты будешь на мероприятии?</legend>
           <label class="choice">
             <input type="radio" name="attendance" value="Да, буду" required />
             <span>Да, буду</span>
@@ -153,7 +154,7 @@
         </fieldset>
 
         <fieldset class="field-group" id="alcoholGroup">
-          <legend>Что вы будете пить?</legend>
+          <legend>Что ты будешь пить?</legend>
           <p class="field-hint">Можно выбрать несколько вариантов.</p>
           <div class="choice-grid" id="alcoholOptions"></div>
         </fieldset>
@@ -178,12 +179,7 @@
 </fieldset>
         <label class="field">
           <span>Комментарий</span>
-          <textarea name="comment" rows="3" placeholder="Например, ответ за двоих или пожелание по напиткам"></textarea>
-        </label>
-
-        <label class="consent">
-          <input type="checkbox" required />
-          <span>Подтверждаю отправку ответа организаторам мероприятия</span>
+          <textarea name="comment" rows="3" placeholder="Например, пожелание по напиткам"></textarea>
         </label>
 
         <button class="submit-button" type="submit">
